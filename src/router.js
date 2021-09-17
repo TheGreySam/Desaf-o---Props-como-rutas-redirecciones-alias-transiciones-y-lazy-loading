@@ -6,6 +6,8 @@ import Contacto from './components/Contacto'
 import Post from './components/Post'
 import Articulo from './components/Articulo'
 import NotFound from './components/NotFound'
+import Simple from './components/administrador/Simple'
+import Avanzado from './components/administrador/Avanzado'
 Vue.use(Router)
 
 export default new Router({
@@ -40,6 +42,18 @@ export default new Router({
         {
             path: '*',
             component: NotFound
+        },
+        {
+            path: '/administrador/simple',
+            name: 'simple',
+            component: Simple,
+            
+        },
+        {
+            path: '/administrador/avanzado',
+            name: 'avanzado',
+            component: Avanzado,
+            
         }
     ]
 })
