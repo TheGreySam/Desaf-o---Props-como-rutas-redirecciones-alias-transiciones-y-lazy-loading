@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Inicio from './components/Inicio'
-import SobreMi from './components/SobreMi'
-import Contacto from './components/Contacto'
-import Post from './components/Post'
-import Articulo from './components/Articulo'
-import NotFound from './components/NotFound'
-import Simple from './components/administrador/Simple'
-import Avanzado from './components/administrador/Avanzado'
+import Inicio from './views/Inicio'
+import SobreMi from './views/SobreMi'
+import Contacto from './views/Contacto'
+import Post from './views/Post'
+import Articulo from './views/Articulo'
+import NotFound from './views/NotFound'
+import Simple from './views/administrador/Simple'
+import Avanzado from './views/administrador/Avanzado'
 
 const Lazyloading = () => import('./components/Lazyloading')
 
@@ -27,7 +27,7 @@ export default new Router({
                 lazyloading: Lazyloading
             },
         },
-    },
+    
     ],
     },
     {
